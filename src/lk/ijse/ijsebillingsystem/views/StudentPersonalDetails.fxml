@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="787.0" prefWidth="683.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="lk.ijse.ijsebillingsystem.controller.StudentPersonalDetailsController">
+    <stylesheets>
+        <URL value="@/lk/ijse/ijsebillingsystem/css/studentpersonaldetails.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="26.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="25.0" layoutY="63.0" prefHeight="35.0" prefWidth="307.0" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <Text layoutX="345.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="347.0" layoutY="63.0" prefHeight="35.0" prefWidth="307.0" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <Text layoutX="27.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name with Initials" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="26.0" layoutY="218.0" prefHeight="100.0" prefWidth="626.0" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <TextField layoutX="26.0" layoutY="142.0" prefHeight="35.0" prefWidth="626.0" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <Text layoutX="27.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="26.0" layoutY="360.0" prefHeight="35.0" prefWidth="307.0" promptText="Home" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <TextField layoutX="345.0" layoutY="360.0" prefHeight="35.0" prefWidth="307.0" promptText="Mobile" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <Text layoutX="27.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of birth" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="26.0" layoutY="433.0" prefHeight="35.0" prefWidth="307.0" promptText="DD/MM/YYYY" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <Text layoutX="346.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <ComboBox layoutX="344.0" layoutY="431.0" prefHeight="35.0" prefWidth="307.0" promptText="Male" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <Text layoutX="27.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="School" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="26.0" layoutY="514.0" prefHeight="35.0" prefWidth="626.0" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <Text layoutX="27.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="University of Other" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="26.0" layoutY="594.0" prefHeight="35.0" prefWidth="626.0" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <Text layoutX="27.0" layoutY="662.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField layoutX="26.0" layoutY="675.0" prefHeight="35.0" prefWidth="626.0" style="-fx-background-color: #F9FBFD; -fx-border-color: #EDF1F4;" />
+      <Text layoutX="27.0" layoutY="745.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Higher Edu. Qua." textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <JFXRadioButton layoutX="177.0" layoutY="731.0" text="Master" />
+      <JFXRadioButton layoutX="282.0" layoutY="731.0" text="Degree" />
+      <JFXRadioButton layoutX="395.0" layoutY="731.0" text="Dimploma" />
+      <JFXRadioButton layoutX="530.0" layoutY="731.0" text="A/L" />
+      <JFXRadioButton layoutX="608.0" layoutY="731.0" text="O/L" />
+   </children>
+</AnchorPane>

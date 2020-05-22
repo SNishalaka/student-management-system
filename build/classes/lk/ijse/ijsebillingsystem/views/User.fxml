@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="323.0" prefWidth="629.0" style="-fx-background-color: #FFFFFF;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ijsebillingsystem.controller.UserController">
+    <stylesheets>
+        <URL value="@/lk/ijse/ijsebillingsystem/views/css/login.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="591.0" layoutX="17.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/ijse-logo.gif" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="240.0" layoutY="197.0" prefHeight="40.0" prefWidth="281.0" style="-fx-border-color: #AAD1BC;" />
+      <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="197.0" prefHeight="40.0" prefWidth="149.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="247.0" prefHeight="40.0" prefWidth="149.0" text="Password">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="240.0" layoutY="249.0" onAction="#txtPasswordOnAction" prefHeight="40.0" prefWidth="281.0" style="-fx-border-color: #AAD1BC;" />
+   </children>
+</AnchorPane>

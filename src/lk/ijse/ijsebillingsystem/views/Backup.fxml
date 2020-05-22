@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="377.0" prefWidth="629.0" style="-fx-background-color: #EDF2F5;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ijsebillingsystem.controller.BackupController">
+   <children>
+      <AnchorPane prefHeight="63.0" prefWidth="629.0" style="-fx-background-color: #007CFD;" />
+      <Pane layoutX="91.0" layoutY="41.0" prefHeight="45.0" prefWidth="45.0" rotate="45.0" style="-fx-background-color: #007CFD;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Pane>
+      <JFXButton fx:id="btnBackUp" buttonType="RAISED" layoutX="425.0" layoutY="169.0" onAction="#btnBackUpOnAction" prefHeight="44.0" prefWidth="133.0" ripplerFill="#1dcd78" style="-fx-background-color: #00CCA1;" text="Back Up">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/database.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="425.0" layoutY="239.0" prefHeight="39.0" prefWidth="133.0" ripplerFill="#e0a84f" style="-fx-background-color: #e0a84f;" text="Restore">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sync.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Text fontSmoothingType="LCD" layoutX="38.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database info">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#8d8787" layoutX="97.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="229.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ijse">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#8d8787" layoutX="97.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database host" textAlignment="RIGHT" wrappingWidth="110.55176588892937">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="229.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="192.168.1.1">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#8d8787" layoutX="97.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database user" textAlignment="RIGHT" wrappingWidth="110.55176588892937">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="229.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="root">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#8d8787" layoutX="97.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DB Type" textAlignment="RIGHT" wrappingWidth="110.55176588892937">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#8d8787" layoutX="97.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto increment" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#8d8787" layoutX="97.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Database name" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="229.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ijse">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="229.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mysql">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="229.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="allStudentPane" prefHeight="700.0" prefWidth="1300.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ijsebillingsystem.controller.AllStudentController">
+    <stylesheets>
+        <URL value="@/lk/ijse/ijsebillingsystem/views/css/allstudent.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tblStudent" layoutX="17.0" layoutY="108.0" prefHeight="462.0" prefWidth="1266.0">
+        <columns>
+          <TableColumn fx:id="tblColSid" prefWidth="75.0" text="SID" />
+            <TableColumn fx:id="tblColSName" prefWidth="235.00003051757812" text="Student Name" />
+            <TableColumn fx:id="tblColSAddress" prefWidth="212.0" text="Student Address" />
+            <TableColumn fx:id="tblColSTel" prefWidth="128.0" text="Student Tel" />
+            <TableColumn fx:id="tblColStatus" prefWidth="126.0" text="Status" />
+            <TableColumn fx:id="tblColEmail" prefWidth="181.0" text="Email" />
+            <TableColumn fx:id="tblColGender" prefWidth="126.0" text="Gender" />
+            <TableColumn fx:id="tblColDOB" prefWidth="104.0" text="DOB" />
+            <TableColumn fx:id="tblColSelect" prefWidth="78.0" text="Select" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnSaveStuDetails1" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="1147.0" layoutY="602.0" onAction="#btnSaveStuDetailsOnAction" prefHeight="46.0" prefWidth="58.0" ripplerFill="#156cee" text=" ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sync.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnSaveStuDetails11" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="1225.0" layoutY="602.0" onAction="#btnSaveStuDetailsOnAction" prefHeight="46.0" prefWidth="58.0" ripplerFill="#156cee" text=" ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/report.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Text layoutX="35.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search via">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <JFXTextField labelFloat="true" layoutX="682.0" layoutY="46.0" prefHeight="28.0" prefWidth="209.0" promptText="serach" />
+      <JFXButton fx:id="btnSaveStuDetails111" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="899.0" layoutY="37.0" onAction="#btnSaveStuDetailsOnAction" prefHeight="46.0" prefWidth="58.0" ripplerFill="#156cee" text=" ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <RadioButton layoutX="153.0" layoutY="50.0" mnemonicParsing="false" text="Student ID">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="297.0" layoutY="50.0" mnemonicParsing="false" text="Student Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="467.0" layoutY="49.0" mnemonicParsing="false" text="Student NIC">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="1366.0" style="-fx-background-color: #EDF2F5; -fx-background-image: url('@../../../../img/back.png');" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ijsebillingsystem.controller.FXMLDocumentController">
+   <children>
+       <AnchorPane fx:id="pnlHome" layoutY="-24.0" prefHeight="688.0" prefWidth="1366.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+           <ImageView accessibleRole="PARENT" disable="true" fitHeight="688.0" fitWidth="1366.0" pickOnBounds="true" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnReports" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="921.0" layoutY="169.0" onAction="#btnReportsOnAction" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="Generated Reports" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/report.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAbout" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="921.0" layoutY="324.0" onAction="#btnAboutonAction" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="About" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/about.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBatchTransfer" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="775.0" layoutY="202.0" onAction="#btnBatchTransferOnAction" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="  Transfer Snaps" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/sync.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSystemSettings" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="775.0" layoutY="357.0" onAction="#btnSystemSettingsOnAction" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="System Settings" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBatchEntry" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="623.0" layoutY="226.0" onAction="#btnBatchEntryOnAction" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="    Batch      Entry" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/batch.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnBackup" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="623.0" layoutY="381.0" onAction="#btnBackupOnAction" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text=" Backups &amp; Restorations" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/database.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCourse" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="477.0" layoutY="257.0" onAction="#btnCourseOnAction" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="   Course    Entry" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/view.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="477.0" layoutY="412.0" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="Calculator" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/calculator.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnStudentEntry" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="330.0" layoutY="284.0" onAction="#btnStudentEntryOnAction" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="    Student    Entry" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/student-entry.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnPayment" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="330.0" layoutY="438.0" onAction="#btnPaymentOnAction" prefHeight="145.0" prefWidth="115.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="Payment Snaps" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <graphic>
+            <ImageView fitHeight="48.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/payment.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAccount" accessibleRole="PARENT" buttonType="RAISED" layoutX="1154.0" layoutY="67.0" onMouseClicked="#aboutButtonActions" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #00CCA1; -fx-background-radius: 6 6 6 6;" text="Account" />
+      <Text fill="#f8f7f7" fontSmoothingType="LCD" layoutX="117.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IJSE - Institute of Software Enginner" wrappingWidth="406.126953125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#f8f7f7" fontSmoothingType="LCD" layoutX="115.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billing System" wrappingWidth="406.126953125">
+         <font>
+            <Font name="Droid Arabic Naskh Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text fill="#fffafa" fontSmoothingType="LCD" layoutX="115.0" layoutY="80.0" stroke="#d02a2a" strokeType="OUTSIDE" strokeWidth="0.0" text="I J S E" wrappingWidth="406.126953125">
+         <font>
+            <Font name="Noto Serif CJK JP Light" size="29.0" />
+         </font>
+      </Text>
+      <Text accessibleRole="PARENT" layoutX="1154.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2018 IJSE. All Rights Reserved." wrappingWidth="204.126953125" AnchorPane.leftAnchor="1154.0" AnchorPane.rightAnchor="7.873046875" AnchorPane.topAnchor="656.10498046875" />
+      <Label alignment="CENTER" layoutX="425.0" layoutY="265.0" prefHeight="25.0" prefWidth="32.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15; -fx-border-color: red; -fx-border-radius: 15 15 15 15;" text="1" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="573.0" layoutY="237.0" prefHeight="25.0" prefWidth="32.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15; -fx-border-color: red; -fx-border-radius: 15 15 15 15;" text="1" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="719.0" layoutY="206.0" prefHeight="25.0" prefWidth="32.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15; -fx-border-color: red; -fx-border-radius: 15 15 15 15;" text="1" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="871.0" layoutY="182.0" prefHeight="25.0" prefWidth="32.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15; -fx-border-color: red; -fx-border-radius: 15 15 15 15;" text="1" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="popList" layoutX="800.0" layoutY="109.0" onMouseClicked="#onListItemClick" opacity="0.0" prefHeight="101.0" prefWidth="200.0" />
+       </AnchorPane>
+      
+      <AnchorPane fx:id="pnlStudent" layoutY="40.0" prefHeight="688.0" prefWidth="1366.0" style="-fx-background-color: #ECECEC;" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="688.0" prefWidth="72.0" style="-fx-background-color: #404D5D;">
+               <children>
+                  <ImageView fx:id="btnBackInStudentPane" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnBackInStudentPaneMouseClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="634.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../assets/back-02.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnSSInStudent" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="634.0" onMouseClicked="#btnSSInStudentMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/s.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="73.0" prefHeight="60.0" prefWidth="1293.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <TextField fx:id="txtSearch" layoutX="14.0" layoutY="17.0" prefHeight="28.0" prefWidth="182.0" promptText="search">
+                     <font>
+                        <Font size="15.0" />
+                     </font></TextField>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="203.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/search.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="245.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search via">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="345.0" layoutY="21.0" mnemonicParsing="false" text="Student ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="470.0" layoutY="21.0" mnemonicParsing="false" text="Student Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="615.0" layoutY="22.0" mnemonicParsing="false" text="Student NIC No">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <JFXButton layoutX="1164.0" layoutY="10.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0b2fe5" text="ADMIN" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/profile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="txtSearch1" layoutX="264.0" layoutY="154.0" prefHeight="31.0" prefWidth="557.0" promptText="ex : P K Suranjith Nishalaka">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+            <Text layoutX="120.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name with Initials">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch11" layoutX="264.0" layoutY="200.0" prefHeight="31.0" prefWidth="557.0" promptText="ex : Pallewatta Kankanamge Suranjith Nishalaka">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text fontSmoothingType="LCD" layoutX="120.0" layoutY="221.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" textAlignment="RIGHT" wrappingWidth="127.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextArea layoutX="264.0" layoutY="247.0" prefHeight="82.0" prefWidth="557.0" />
+            <Text fontSmoothingType="LCD" layoutX="120.0" layoutY="264.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" textAlignment="RIGHT" wrappingWidth="127.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch111" layoutX="322.0" layoutY="343.0" prefHeight="31.0" prefWidth="200.0" promptText="071-4264913">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text fontSmoothingType="LCD" layoutX="120.0" layoutY="364.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone" textAlignment="RIGHT" wrappingWidth="127.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="264.0" layoutY="364.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" wrappingWidth="76.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch1111" layoutX="621.0" layoutY="343.0" prefHeight="31.0" prefWidth="200.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text fontSmoothingType="LCD" layoutX="543.0" layoutY="364.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile" wrappingWidth="63.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch112" layoutX="264.0" layoutY="387.0" prefHeight="31.0" prefWidth="557.0" promptText="ex : s.nishalaka97@gmail.com">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text fontSmoothingType="LCD" layoutX="120.0" layoutY="408.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="RIGHT" wrappingWidth="127.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="121.0" layoutY="454.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of birth" textAlignment="RIGHT" wrappingWidth="127.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <DatePicker layoutX="264.0" layoutY="433.0" prefHeight="31.0" prefWidth="100.0" />
+            <TextField fx:id="txtSearch11111" layoutX="460.0" layoutY="433.0" prefHeight="31.0" prefWidth="115.0" promptText="972042226V">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text fontSmoothingType="LCD" layoutX="391.0" layoutY="454.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC No" wrappingWidth="63.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="589.0" layoutY="454.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="gender" wrappingWidth="63.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <JFXRadioButton layoutX="662.0" layoutY="440.0" text="Male">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXRadioButton>
+            <JFXRadioButton layoutX="740.0" layoutY="440.0" text="Female">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXRadioButton>
+            <TextField fx:id="txtSearch12" layoutX="265.0" layoutY="479.0" prefHeight="31.0" prefWidth="557.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="121.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="School" textAlignment="RIGHT" wrappingWidth="127.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch121" layoutX="265.0" layoutY="526.0" prefHeight="31.0" prefWidth="557.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="121.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Univercity/Other" textAlignment="RIGHT" wrappingWidth="127.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fontSmoothingType="LCD" layoutX="120.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERSONAL DETAILS">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Line endX="599.0" layoutX="221.0" layoutY="131.0" startX="-100.0" stroke="#a8a2a2" />
+            <Text layoutX="121.0" layoutY="589.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Higher Education" textAlignment="RIGHT" wrappingWidth="127.404789686203">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <JFXCheckBox layoutX="266.0" layoutY="568.0" prefHeight="31.0" prefWidth="86.0" text="Master">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox layoutX="380.0" layoutY="568.0" prefHeight="31.0" prefWidth="86.0" text="Degree">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox layoutX="502.0" layoutY="568.0" prefHeight="31.0" prefWidth="86.0" text="Diploma">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox layoutX="635.0" layoutY="568.0" prefHeight="31.0" prefWidth="86.0" text="A/L">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox layoutX="738.0" layoutY="568.0" prefHeight="31.0" prefWidth="86.0" text="O/L">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <Text fontSmoothingType="LCD" layoutX="854.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARENT DETAILS">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="856.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of parent" textAlignment="RIGHT">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Line endX="382.0" layoutX="955.0" layoutY="131.0" startX="-100.0" stroke="#a8a2a2" />
+            <TextField fx:id="txtSearch13" layoutX="995.0" layoutY="154.0" prefHeight="31.0" prefWidth="345.0" promptText="ex : P K Ranjith Ranasignhe">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="856.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/Guardian" textAlignment="RIGHT" wrappingWidth="111.31348103284836">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="856.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone" textAlignment="RIGHT" wrappingWidth="111.31348103284836">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch131" layoutX="1213.0" layoutY="200.0" prefHeight="31.0" prefWidth="127.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="995.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M1" wrappingWidth="50.31348103284836">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch1311" layoutX="1029.0" layoutY="200.0" prefHeight="31.0" prefWidth="127.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="1175.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M2" textAlignment="RIGHT" wrappingWidth="27.999993324279785">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="856.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="RIGHT" wrappingWidth="111.31348103284836">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch132" layoutX="995.0" layoutY="243.0" prefHeight="31.0" prefWidth="345.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="854.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Designation" textAlignment="RIGHT" wrappingWidth="111.31348103284836">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch1321" layoutX="993.0" layoutY="288.0" prefHeight="31.0" prefWidth="345.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="856.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Working place" textAlignment="RIGHT" wrappingWidth="111.31348103284836">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch13211" layoutX="995.0" layoutY="333.0" prefHeight="31.0" prefWidth="345.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <StackPane fx:id="stackPaneInStudentPanel" layoutX="858.0" layoutY="369.0" prefHeight="229.0" prefWidth="483.0" />
+            <Text layoutX="856.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" textAlignment="RIGHT" wrappingWidth="111.31348103284836">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextArea layoutX="995.0" layoutY="383.0" prefHeight="82.0" prefWidth="345.0" />
+            <Text fontSmoothingType="LCD" layoutX="856.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT DETAILS">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Line endX="382.0" layoutX="957.0" layoutY="511.0" startX="-100.0" stroke="#a8a2a2" />
+            <Text layoutX="854.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reg Fee" textAlignment="RIGHT" wrappingWidth="111.31348103284836">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtSearch1322" layoutX="993.0" layoutY="526.0" prefHeight="31.0" prefWidth="115.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="1168.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TAX" textAlignment="RIGHT" wrappingWidth="32.00001272559166">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Spinner layoutX="1219.0" layoutY="526.0" prefHeight="31.0" prefWidth="100.0" />
+            <JFXButton buttonType="RAISED" layoutX="1228.0" layoutY="624.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0be819" style="-fx-border-color: #11e23a;" text="SAVE" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="btnSSRegFeeInStudent" fitHeight="25.0" fitWidth="25.0" layoutX="1113.0" layoutY="531.0" onMouseClicked="#btnSSRegFeeInStudentMouseClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/setting.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnSSRegTaxInStudent" fitHeight="25.0" fitWidth="25.0" layoutX="1322.0" layoutY="530.0" onMouseClicked="#btnSSRegTaxInStudentMouseClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/setting.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="1100.0" layoutY="624.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#ec9363" style="-fx-border-color: #a83e06;" text=" UPDATE" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/sync.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="898.0" layoutY="624.0" prefHeight="40.0" prefWidth="50.0" ripplerFill="#819bdd" style="-fx-border-color: BLUE;" text=" " textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/report.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="961.0" layoutY="624.0" prefHeight="40.0" prefWidth="127.0" ripplerFill="#e859b3" style="-fx-border-color: #ee0eee;" text="PAYMENT" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/payment.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRequestCourse" buttonType="RAISED" layoutX="697.0" layoutY="624.0" onAction="#btnRequestCourseOnAction" prefHeight="40.0" prefWidth="189.0" ripplerFill="#e859b3" style="-fx-border-color: #ee0eee;" text="REQUEST COURSE" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/payment.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlCourse" prefHeight="688.0" prefWidth="1366.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="688.0" prefWidth="72.0" style="-fx-background-color: #404D5D;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="btnBackInCoursePane" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnBackInCoursePaneOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="634.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../assets/back-02.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnSSInCoursePane" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="634.0" onMouseClicked="#btnSSInCoursePaneMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/s.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="60.0" prefWidth="1293.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="txtSearch2" layoutX="14.0" layoutY="17.0" prefHeight="28.0" prefWidth="182.0" promptText="search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="203.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/search.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="245.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search via">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="345.0" layoutY="21.0" mnemonicParsing="false" text="Course ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="470.0" layoutY="21.0" mnemonicParsing="false" text="Course Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="615.0" layoutY="22.0" mnemonicParsing="false" text="Start date">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <JFXButton layoutX="1164.0" layoutY="10.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0b2fe5" text="ADMIN" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/profile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="629.0" prefWidth="1293.0" style="-fx-background-color: #ECECEC;" AnchorPane.leftAnchor="72.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="33.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="599.0" layoutX="134.0" layoutY="61.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField fx:id="txtSearch14" layoutX="157.0" layoutY="90.0" prefHeight="31.0" prefWidth="172.0" promptText="CMJD">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="33.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course name" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="33.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ComboBox layoutX="157.0" layoutY="135.0" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: white;" />
+                  <Text layoutX="381.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course type" textAlignment="RIGHT" wrappingWidth="154.99999357759953">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ComboBox layoutX="545.0" layoutY="90.0" prefHeight="31.0" prefWidth="172.0" promptText="course type" style="-fx-background-color: white;" />
+                  <Text layoutX="381.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of payment time" textAlignment="RIGHT" wrappingWidth="155.00000375509262">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ComboBox layoutX="545.0" layoutY="135.0" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: white;" />
+                  <Text layoutX="33.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Limit" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Spinner layoutX="157.0" layoutY="186.0" prefHeight="31.0" prefWidth="172.0" />
+                  <Text fontSmoothingType="LCD" layoutX="34.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="599.0" layoutX="135.0" layoutY="309.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField fx:id="txtSearch141" layoutX="179.0" layoutY="336.0" prefHeight="31.0" prefWidth="154.0" promptText="36 000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="33.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course fee" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="157.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs" textAlignment="RIGHT" wrappingWidth="16.999995946884155">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="420.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course discount" textAlignment="RIGHT" wrappingWidth="132.7031111717224">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Spinner layoutX="563.0" layoutY="336.0" prefHeight="31.0" prefWidth="172.0" />
+                  <Text layoutX="399.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interest for late days" textAlignment="RIGHT" wrappingWidth="153.5468612909317">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Spinner layoutX="563.0" layoutY="380.0" prefHeight="31.0" prefWidth="172.0" />
+                  <Text layoutX="42.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Goverment tax" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Spinner layoutX="178.0" layoutY="380.0" prefHeight="31.0" prefWidth="155.0" />
+                  <Text fontSmoothingType="LCD" layoutX="33.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OTHER DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="599.0" layoutX="134.0" layoutY="495.0" startX="-100.0" stroke="#a8a2a2" />
+                  <Text layoutX="42.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional Note" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextArea layoutX="168.0" layoutY="514.0" prefHeight="101.0" prefWidth="570.0" />
+                  <TableView layoutX="770.0" layoutY="58.0" prefHeight="457.0" prefWidth="506.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="CID" />
+                      <TableColumn prefWidth="212.0" text="Course name" />
+                        <TableColumn prefWidth="133.0" text="Course type" />
+                        <TableColumn prefWidth="85.0" text="Duration" />
+                    </columns>
+                  </TableView>
+                  <ImageView fx:id="btnSSCourseType" fitHeight="18.0" fitWidth="17.0" layoutX="722.0" layoutY="99.0" onMouseClicked="#btnSSCourseTypeMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/setting.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnSSCourseDuration" fitHeight="18.0" fitWidth="17.0" layoutX="312.0" layoutY="142.0" onMouseClicked="#btnSSCourseDurationMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/setting.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="973.0" layoutY="560.0" prefHeight="40.0" prefWidth="50.0" ripplerFill="#819bdd" style="-fx-border-color: BLUE;" text=" " textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="800.0" layoutY="560.0" prefHeight="40.0" prefWidth="164.0" ripplerFill="#eb63ae" style="-fx-border-color: #fb0591;" text="Request Batch" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/batch.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="1161.0" layoutY="560.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0be819" style="-fx-border-color: #11e23a;" text="SAVE" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/tick.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="1035.0" layoutY="560.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#ec9363" style="-fx-border-color: #a83e06;" text=" UPDATE" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/sync.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fx:id="btnSSNoOfPaymentTime" fitHeight="18.0" fitWidth="17.0" layoutX="722.0" layoutY="142.0" onMouseClicked="#btnSSNoOfPaymentTimeMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/setting.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlBatch" prefHeight="688.0" prefWidth="1366.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="688.0" prefWidth="72.0" style="-fx-background-color: #404D5D;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="btnBackInBatchPane" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnBackInBatchPaneMouseClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="634.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../assets/back-02.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnSSInBatch" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="634.0" onMouseClicked="#btnSSInBatchMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/s.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="60.0" prefWidth="1294.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="72.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="txtSearch21" layoutX="14.0" layoutY="17.0" prefHeight="28.0" prefWidth="182.0" promptText="search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="203.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/search.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="245.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search via">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="345.0" layoutY="21.0" mnemonicParsing="false" text="Batch ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="470.0" layoutY="21.0" mnemonicParsing="false" text="Batch Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="615.0" layoutY="22.0" mnemonicParsing="false" text="Start date">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <JFXButton layoutX="1164.0" layoutY="10.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0b2fe5" text="ADMIN" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/profile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="629.0" prefWidth="1293.0" style="-fx-background-color: #ECECEC;" AnchorPane.leftAnchor="72.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="23.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BATCH DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="599.0" layoutX="124.0" layoutY="61.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField layoutX="147.0" layoutY="137.0" prefHeight="31.0" prefWidth="172.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="23.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch No" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="39.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name" textAlignment="RIGHT" wrappingWidth="96.99999627424404">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ComboBox layoutX="147.0" layoutY="89.0" prefHeight="31.0" prefWidth="577.0" style="-fx-background-color: white;" />
+                  <TextField layoutX="148.0" layoutY="184.0" prefHeight="31.0" prefWidth="577.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="24.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch Name" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="24.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start date" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <DatePicker layoutX="148.0" layoutY="231.0" prefHeight="31.0" prefWidth="189.0" />
+                  <Text layoutX="421.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Branch" textAlignment="RIGHT" wrappingWidth="96.99999627424404">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ComboBox layoutX="535.0" layoutY="231.0" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: white;" />
+                  <ImageView fx:id="btnEyeViewBatchHistory" fitHeight="25.0" fitWidth="25.0" layoutX="329.0" layoutY="140.0" onMouseClicked="#btnEyeViewBatchHistoryMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/eye.png" />
+                     </image>
+                  </ImageView>
+                  <TableView layoutX="780.0" layoutY="120.0" prefHeight="485.0" prefWidth="483.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="CID" />
+                      <TableColumn prefWidth="284.0" text="Course Name" />
+                        <TableColumn prefWidth="123.0" text="Course Yype" />
+                    </columns>
+                  </TableView>
+                  <Text layoutX="23.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional Note" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextArea layoutX="148.0" layoutY="382.0" prefHeight="128.0" prefWidth="577.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextArea>
+                  <Text fontSmoothingType="LCD" layoutX="23.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OTHER DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="599.0" layoutX="124.0" layoutY="344.0" startX="-100.0" stroke="#a8a2a2" />
+                  <Text fontSmoothingType="LCD" layoutX="780.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="378.0" layoutX="882.0" layoutY="61.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField fx:id="txtSearch211" layoutX="1047.0" layoutY="79.0" prefHeight="28.0" prefWidth="182.0" promptText="search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="1236.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/search.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="924.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(find a course to request a new batch)" textAlignment="RIGHT" wrappingWidth="274.99999627424404">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="416.0" layoutY="565.0" prefHeight="40.0" prefWidth="50.0" ripplerFill="#819bdd" style="-fx-border-color: BLUE;" text=" " textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="243.0" layoutY="565.0" prefHeight="40.0" prefWidth="164.0" ripplerFill="#eb63ae" style="-fx-border-color: #fb0591;" text="Batch History" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/calendar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="609.0" layoutY="565.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0be819" style="-fx-border-color: #11e23a;" text="SAVE" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/tick.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="481.0" layoutY="565.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#ec9363" style="-fx-border-color: #a83e06;" text=" UPDATE" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/sync.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlPayment" prefHeight="688.0" prefWidth="1366.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="689.0" prefWidth="72.0" style="-fx-background-color: #404D5D;">
+               <children>
+                  <ImageView fx:id="btnBackInPaymentPane" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnBackInPaymentPaneMouseClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="634.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../assets/back-02.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnSSInPayment" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="634.0" onMouseClicked="#btnSSInPaymentMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/s.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="60.0" prefWidth="1294.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton layoutX="1164.0" layoutY="10.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0b2fe5" text="ADMIN" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/profile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fontSmoothingType="LCD" layoutX="32.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODAY ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#009712" fontSmoothingType="LCD" layoutX="114.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08/26/2018">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#009712" fontSmoothingType="LCD" layoutX="230.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10.05 AM">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="629.0" prefWidth="1293.0" style="-fx-background-color: #ECECEC;" AnchorPane.leftAnchor="72.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="28.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="562.0" layoutX="129.0" layoutY="46.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField fx:id="txtSearch141" layoutX="157.0" layoutY="100.0" prefHeight="31.0" prefWidth="539.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="33.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student name" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fontSmoothingType="LCD" layoutX="24.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="562.0" layoutX="125.0" layoutY="387.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField fx:id="txtSearch1411" layoutX="204.0" layoutY="450.0" prefHeight="31.0" prefWidth="143.0" promptText="36 000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="23.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment type" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="167.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs" textAlignment="RIGHT" wrappingWidth="16.999995946884155">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="305.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Discount" textAlignment="RIGHT" wrappingWidth="132.7031111717224">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Spinner layoutX="456.0" layoutY="450.0" prefHeight="31.0" prefWidth="72.0" />
+                  <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="1041.0" layoutY="560.0" prefHeight="40.0" prefWidth="50.0" ripplerFill="#819bdd" style="-fx-border-color: BLUE;" text=" " textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="880.0" layoutY="560.0" prefHeight="40.0" prefWidth="143.0" ripplerFill="#eb63ae" style="-fx-border-color: #fb0591;" text="VIEW ALL" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/view.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="1104.0" layoutY="560.0" prefHeight="40.0" prefWidth="172.0" ripplerFill="#0be819" style="-fx-border-color: #11e23a;" text="DO PAYMENT" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/tick.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <TextField fx:id="txtSearch2121" layoutX="34.0" layoutY="58.0" prefHeight="28.0" prefWidth="182.0" promptText="search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="223.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/search.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="265.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search via">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="365.0" layoutY="62.0" mnemonicParsing="false" text="Student ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="490.0" layoutY="62.0" mnemonicParsing="false" text="Student Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <TextField fx:id="txtSearch1412" layoutX="157.0" layoutY="141.0" prefHeight="31.0" prefWidth="164.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="33.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC No" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtSearch14121" layoutX="456.0" layoutY="141.0" prefHeight="31.0" prefWidth="238.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="332.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="166.0" layoutY="409.0" mnemonicParsing="false" text="Full Payment">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="342.0" layoutY="409.0" mnemonicParsing="false" text="Half Payment">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Text layoutX="23.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Fee" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="537.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G Tax" textAlignment="RIGHT" wrappingWidth="59.02343487739563">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Spinner layoutX="611.0" layoutY="450.0" prefHeight="31.0" prefWidth="87.0" />
+                  <Text layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interest for late days is exits" textAlignment="RIGHT" wrappingWidth="136.9999965969473">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="163.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Days" textAlignment="RIGHT" wrappingWidth="39.999990463256836">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtSearch14111" layoutX="213.0" layoutY="510.0" prefHeight="31.0" prefWidth="50.0" promptText="10">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="267.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" textAlignment="RIGHT" wrappingWidth="49.999988079071045">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtSearch14112" layoutX="379.0" layoutY="509.0" prefHeight="31.0" prefWidth="123.0" promptText="36 000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="334.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs" textAlignment="RIGHT" wrappingWidth="16.999995946884155">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="15.0" layoutY="493.0" prefHeight="1.0" prefWidth="483.0" />
+                  <TextField fx:id="txtSearch14113" layoutX="211.0" layoutY="579.0" prefHeight="36.0" prefWidth="298.0" promptText="36 000">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="167.0" layoutY="604.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs" textAlignment="RIGHT" wrappingWidth="24.999994039535522">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="28.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Fee" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="15.0" layoutY="563.0" prefHeight="1.0" prefWidth="483.0" />
+                  <Text fontSmoothingType="LCD" layoutX="27.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="560.0" layoutX="128.0" layoutY="224.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField fx:id="txtSearch1413" layoutX="163.0" layoutY="292.0" prefHeight="31.0" prefWidth="529.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="39.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course name" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtSearch21211" layoutX="40.0" layoutY="250.0" prefHeight="28.0" prefWidth="182.0" promptText="search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="271.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search via">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="371.0" layoutY="254.0" mnemonicParsing="false" text="Course ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="496.0" layoutY="254.0" mnemonicParsing="false" text="Course name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <TabPane layoutX="760.0" layoutY="76.0" prefHeight="451.0" prefWidth="506.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Courses">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView prefHeight="416.0" prefWidth="506.0">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="CID" />
+                                          <TableColumn prefWidth="212.0" text="Course name" />
+                                          <TableColumn prefWidth="133.0" text="Course type" />
+                                          <TableColumn prefWidth="85.0" text="Duration" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Students">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView prefHeight="416.0" prefWidth="506.0">
+                                       <columns>
+                                          <TableColumn prefWidth="66.0" text="SID" />
+                                          <TableColumn prefWidth="193.0" text="Student name" />
+                                          <TableColumn prefWidth="125.0" text="NIC No" />
+                                          <TableColumn prefWidth="121.0" text="Mobile" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+                  <Text layoutX="790.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="switch to tab get details quickly" wrappingWidth="222.99999571964145">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="760.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/smile.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="525.0" layoutY="577.0" prefHeight="40.0" prefWidth="50.0" ripplerFill="#819bdd" style="-fx-border-color: BLUE;" text=" " textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/calculator.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="227.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlSystemSettings" prefHeight="688.0" prefWidth="1366.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="688.0" prefWidth="72.0" style="-fx-background-color: #404D5D;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="btnBackInSystemSettingsPane" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnBackInSystemSettingsPaneMouseClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="634.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../assets/back-02.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnBackInSystemSettingsPane1" fitHeight="42.0" fitWidth="40.0" layoutX="16.0" layoutY="634.0" onMouseClicked="#btnBackInSystemSettingsPaneMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/info.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="60.0" prefWidth="1294.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton layoutX="1164.0" layoutY="10.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0b2fe5" text="ADMIN" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/profile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fontSmoothingType="LCD" layoutX="17.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODAY ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#009712" fontSmoothingType="LCD" layoutX="99.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08/26/2018">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#009712" fontSmoothingType="LCD" layoutX="215.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10.05 AM">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="629.0" prefWidth="1293.0" style="-fx-background-color: #ECECEC;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="26.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IJSE REGISTRATION FEE SETTINGS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="423.0" layoutX="129.0" layoutY="119.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField layoutX="166.0" layoutY="160.0" prefHeight="31.0" prefWidth="172.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="42.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration fee" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <JFXButton buttonType="RAISED" layoutX="1136.0" layoutY="566.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0be819" style="-fx-border-color: #11e23a;" text="SAVE ALL" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/tick.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="RED" layoutX="48.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(if any changes in ithis, values set automatiicaly where they are include)" textAlignment="RIGHT" wrappingWidth="505.9999996870756">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="24.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/info.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="350.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="166.0" layoutY="210.0" prefHeight="31.0" prefWidth="172.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="42.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration fee tax" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="350.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+                  <Text fontSmoothingType="LCD" layoutX="28.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE ENTRY SETTINGS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="417.0" layoutX="129.0" layoutY="334.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField fx:id="txtSSCourseType" layoutX="172.0" layoutY="363.0" prefHeight="31.0" prefWidth="172.0" promptText="monthly vice">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text fx:id="lblSSCourseType" layoutX="48.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course_types" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="356.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="172.0" layoutY="414.0" prefHeight="31.0" prefWidth="172.0" promptText="25 days">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="25.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course durations" textAlignment="RIGHT" wrappingWidth="136.99999955296516">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="356.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="172.0" layoutY="463.0" prefHeight="31.0" prefWidth="172.0" promptText="3 time payment">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="25.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of payment time" textAlignment="RIGHT" wrappingWidth="136.99999955296516">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="356.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+                  <Text fontSmoothingType="LCD" layoutX="667.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER PROFILE SETTINGS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="423.0" layoutX="770.0" layoutY="112.0" startX="-100.0" stroke="#a8a2a2" />
+                  <TextField layoutX="860.0" layoutY="163.0" prefHeight="31.0" prefWidth="245.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="711.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User name" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <PasswordField layoutX="860.0" layoutY="213.0" prefHeight="31.0" prefWidth="245.0" />
+                  <Text layoutX="711.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <PasswordField layoutX="860.0" layoutY="261.0" prefHeight="31.0" prefWidth="245.0" />
+                  <Text layoutX="676.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re=enter Password" textAlignment="RIGHT" wrappingWidth="154.00001496076584">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="1125.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="1125.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="1160.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/error.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="1160.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/error.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#171717" fontSmoothingType="LCD" layoutX="691.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New user" textAlignment="RIGHT" wrappingWidth="87.00000352007919">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="670.0" layoutY="136.0" prefHeight="3.0" prefWidth="32.0" />
+                  <Separator layoutX="790.0" layoutY="137.0" prefHeight="3.0" prefWidth="400.0" />
+                  <Text fill="#171717" fontSmoothingType="LCD" layoutX="697.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change passord" textAlignment="RIGHT" wrappingWidth="129.0000025620684">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="667.0" layoutY="334.0" prefHeight="3.0" prefWidth="32.0" />
+                  <Separator layoutX="842.0" layoutY="335.0" prefHeight="3.0" prefWidth="345.0" />
+                  <PasswordField layoutX="860.0" layoutY="362.0" prefHeight="31.0" prefWidth="245.0" />
+                  <Text layoutX="711.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New password" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <PasswordField layoutX="860.0" layoutY="410.0" prefHeight="31.0" prefWidth="245.0" />
+                  <Text layoutX="676.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re=enter Password" textAlignment="RIGHT" wrappingWidth="154.00001496076584">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="1125.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="1125.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/tick.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="1160.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/error.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="1160.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/error.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlReports" prefHeight="688.0" prefWidth="1366.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="629.0" prefWidth="1293.0" style="-fx-background-color: #ECECEC;" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="977.0" layoutY="580.0" prefHeight="40.0" prefWidth="50.0" ripplerFill="#819bdd" style="-fx-border-color: BLUE;" text=" " textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="804.0" layoutY="580.0" prefHeight="40.0" prefWidth="164.0" ripplerFill="#eb63ae" style="-fx-border-color: #fb0591;" text="Request Batch" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/batch.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="1165.0" layoutY="580.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0be819" style="-fx-border-color: #11e23a;" text="SAVE" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/tick.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="1039.0" layoutY="580.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#ec9363" style="-fx-border-color: #a83e06;" text=" UPDATE" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/sync.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <TabPane layoutX="22.0" layoutY="69.0" prefHeight="500.0" prefWidth="1254.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                    <tabs>
+                      <Tab text="STUDENTS">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="432.0" prefWidth="1254.0">
+                                 <children>
+                                    <TableView prefHeight="467.0" prefWidth="1254.0">
+                                      <columns>
+                                        <TableColumn prefWidth="71.00003051757812" text=" SID" />
+                                        <TableColumn prefWidth="315.0" text="Student Name" />
+                                          <TableColumn prefWidth="242.0" text="Address" />
+                                          <TableColumn prefWidth="143.0" text="Mobile" />
+                                          <TableColumn prefWidth="143.0" text="Tel Home" />
+                                          <TableColumn prefWidth="183.0" text="Email" />
+                                          <TableColumn prefWidth="183.0" text="Date on birth" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="COURSES">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView prefHeight="507.0" prefWidth="1254.0">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                       </columns>
+                                    </TableView>
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="BATCHES">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView prefHeight="507.0" prefWidth="1254.0">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                       </columns>
+                                    </TableView>
+                                 </children></AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="PAYMENTS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+                  <Text layoutX="981.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort by :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ComboBox layoutX="1054.0" layoutY="22.0" prefHeight="36.0" prefWidth="223.0" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="688.0" prefWidth="72.0" style="-fx-background-color: #404D5D;" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="btnBackInReportPane" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnBackInReportPaneMouseClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="634.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../assets/back-02.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnSSInReports" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="634.0" onMouseClicked="#btnSSInReportsMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/s.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="60.0" prefWidth="1294.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="txtSearch212" layoutX="14.0" layoutY="17.0" prefHeight="28.0" prefWidth="182.0" promptText="search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="203.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/search.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="245.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search via">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="345.0" layoutY="21.0" mnemonicParsing="false" text="Batch ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="470.0" layoutY="21.0" mnemonicParsing="false" text="Batch Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="615.0" layoutY="22.0" mnemonicParsing="false" text="Start date">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <JFXButton layoutX="1164.0" layoutY="10.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0b2fe5" text="ADMIN" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/profile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlBatchTransfer" prefHeight="688.0" prefWidth="1366.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="688.0" prefWidth="72.0" style="-fx-background-color: #404D5D;">
+               <children>
+                  <ImageView fx:id="btnBackInBatchTransferPane" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnBackInBatchTransferPaneOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="634.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../assets/back-02.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnSSInBatchTransferPane" fitHeight="42.0" fitWidth="40.0" layoutX="14.0" layoutY="634.0" onMouseClicked="#btnSSInBatchTransferPanemouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/s.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="629.0" prefWidth="1293.0" style="-fx-background-color: #ECECEC;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <Text fontSmoothingType="LCD" layoutX="33.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="599.0" layoutX="134.0" layoutY="61.0" startX="-100.0" stroke="#a8a2a2" />
+                  <Text layoutX="34.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="382.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC No" textAlignment="RIGHT" wrappingWidth="154.99999357759953">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fontSmoothingType="LCD" layoutX="33.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BATCH DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="599.0" layoutX="134.0" layoutY="285.0" startX="-100.0" stroke="#a8a2a2" />
+                  <Text layoutX="889.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs" textAlignment="RIGHT" wrappingWidth="16.999995946884155">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="31.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reason" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="1062.0" layoutY="561.0" prefHeight="40.0" prefWidth="50.0" ripplerFill="#819bdd" style="-fx-border-color: BLUE;" text=" " textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="1129.0" layoutY="560.0" prefHeight="40.0" prefWidth="143.0" ripplerFill="#ec9363" style="-fx-border-color: #a83e06;" text="TRANSFER" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/sync.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <TextField fx:id="txtSearch1415" layoutX="562.0" layoutY="137.0" prefHeight="31.0" prefWidth="172.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtSearch1416" layoutX="158.0" layoutY="185.0" prefHeight="31.0" prefWidth="577.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="34.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student name" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtSearch221" layoutX="35.0" layoutY="74.0" prefHeight="28.0" prefWidth="182.0" promptText="search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="224.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/search.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="266.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search via">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="366.0" layoutY="78.0" mnemonicParsing="false" text="Student ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="491.0" layoutY="78.0" mnemonicParsing="false" text="Student Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="636.0" layoutY="79.0" mnemonicParsing="false" text="NIC No">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <TextField fx:id="txtSearch22" layoutX="33.0" layoutY="307.0" prefHeight="28.0" prefWidth="182.0" promptText="search">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="222.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/search.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="264.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search via">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <RadioButton layoutX="364.0" layoutY="311.0" mnemonicParsing="false" text="Batch ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="489.0" layoutY="311.0" mnemonicParsing="false" text="batch Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <Text layoutX="33.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch No" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtSearch14161" layoutX="471.0" layoutY="358.0" prefHeight="31.0" prefWidth="256.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox layoutX="157.0" layoutY="475.0" prefHeight="31.0" prefWidth="223.0" style="-fx-background-color: white;" />
+                  <Text fontSmoothingType="LCD" layoutX="31.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRANSFER DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="599.0" layoutX="132.0" layoutY="449.0" startX="-100.0" stroke="#a8a2a2" />
+                  <ImageView fx:id="btnSSTransferReason" fitHeight="25.0" fitWidth="25.0" layoutX="386.0" layoutY="479.0" onMouseClicked="#btnSSTransferReasonMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/setting.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="203.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="( request new batch)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="173.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/info.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="31.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextArea layoutX="156.0" layoutY="519.0" prefHeight="82.0" prefWidth="570.0" promptText="optional note about transfer">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextArea>
+                  <Text fontSmoothingType="LCD" layoutX="765.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COURSE DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="431.0" layoutX="830.0" layoutY="62.0" startX="-61.0" stroke="#a8a2a2" />
+                  <Text layoutX="946.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(student's current courses)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="916.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/info.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txtSearch1417" layoutX="889.0" layoutY="74.0" prefHeight="31.0" prefWidth="345.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="765.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 01" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtSearch14171" layoutX="889.0" layoutY="127.0" prefHeight="31.0" prefWidth="345.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="765.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 02" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1234.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/back-01.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1234.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/back-01.png" />
+                     </image>
+                  </ImageView>
+                  <ComboBox layoutX="158.0" layoutY="358.0" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: white;" />
+                  <Text fontSmoothingType="LCD" layoutX="753.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT DETAILS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Line endX="431.0" layoutX="818.0" layoutY="285.0" startX="-61.0" stroke="#a8a2a2" />
+                  <TextField fx:id="txtSearch141611" layoutX="916.0" layoutY="306.0" prefHeight="31.0" prefWidth="238.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="765.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transfer Fee" textAlignment="RIGHT" wrappingWidth="113.99999571964145">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="btnSSTransferFee" fitHeight="25.0" fitWidth="25.0" layoutX="1161.0" layoutY="310.0" onMouseClicked="#btnSSTransferFeeMouseClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/setting.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="356.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Batch Name" textAlignment="RIGHT" wrappingWidth="102.99999929219484">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <ComboBox layoutX="158.0" layoutY="137.0" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: white;" />
+                  <JFXButton buttonType="RAISED" layoutX="918.0" layoutY="560.0" prefHeight="40.0" prefWidth="127.0" ripplerFill="#e859b3" style="-fx-border-color: #ee0eee;" text="PAYMENT" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/payment.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="60.0" prefWidth="1293.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton layoutX="1164.0" layoutY="10.0" prefHeight="40.0" prefWidth="115.0" ripplerFill="#0b2fe5" text="ADMIN" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/profile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fontSmoothingType="LCD" layoutX="29.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODAY ">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#009712" fontSmoothingType="LCD" layoutX="111.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08/26/2018">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#009712" fontSmoothingType="LCD" layoutX="227.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10.05 AM">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      
+   </children>
+</AnchorPane>

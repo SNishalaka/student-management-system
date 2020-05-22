@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ijsebillingsystem.controller.StudentController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0" prefWidth="1920.0">
+         <children>
+            <ImageView fitHeight="1040.0" fitWidth="1903.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/home-back.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnStudentEntry" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="512.0" layoutY="450.0" onAction="#btnStudentEntryOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="       Student       Entry" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/student-entry.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnPayment" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="512.0" layoutY="663.0" onAction="#btnPaymentOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="Payment Snaps" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/payment.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCourseEntry" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="694.0" layoutY="407.0" onAction="#btnCourseEntryOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="      Course      Entry" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/view.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnCalculator" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="694.0" layoutY="620.0" onAction="#btnCalculatorOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="Calculator" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/calculator.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnBatchEntry" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="877.0" layoutY="365.0" onAction="#btnBatchEntryOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="     Batch     Entry" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/batch.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnBackups" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="877.0" layoutY="578.0" onAction="#btnBackupsOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text=" Backups &amp; Restorations" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/database.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnTransferSnaps" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="1063.0" layoutY="319.0" onAction="#btnTransferSnapsOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="  Transfer Snaps" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/sync.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSystemSettings" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="1063.0" layoutY="532.0" onAction="#btnSystemSettingsOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="System Settings" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnGeneratedReports" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="1246.0" layoutY="277.0" onAction="#btnGeneratedReportsOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="Generated Reports" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/report.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAbout" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="1246.0" layoutY="490.0" onAction="#btnAboutOnAction" prefHeight="196.0" prefWidth="152.0" ripplerFill="#20b5e3" style="-fx-background-color: #FAFAFA; -fx-background-radius: 6 6 6 6;" text="About" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/about.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Text fill="#f8f7f7" fontSmoothingType="LCD" layoutX="257.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IJSE - Institute of Software Enginner" wrappingWidth="406.126953125">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#f8f7f7" fontSmoothingType="LCD" layoutX="255.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billing System" wrappingWidth="406.126953125">
+               <font>
+                  <Font name="Droid Arabic Naskh Bold" size="35.0" />
+               </font>
+            </Text>
+            <Text fill="#fffafa" fontSmoothingType="LCD" layoutX="255.0" layoutY="93.0" stroke="#d02a2a" strokeType="OUTSIDE" strokeWidth="0.0" text="I J S E" wrappingWidth="406.126953125">
+               <font>
+                  <Font name="Noto Serif CJK JP Light" size="40.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnAccount" buttonType="RAISED" layoutX="1582.0" layoutY="84.0" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #00CCA1; -fx-background-radius: 6 6 6 6;" text="Account">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="1644.0" layoutY="1021.0" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2018 IJSE. All Rights Reserved." wrappingWidth="204.126953125" />
+            <Label alignment="CENTER" layoutX="643.0" layoutY="429.0" prefHeight="43.0" prefWidth="37.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15; -fx-border-color: red; -fx-border-radius: 15 15 15 15;" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="828.0" layoutY="386.0" prefHeight="43.0" prefWidth="37.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15; -fx-border-color: red; -fx-border-radius: 15 15 15 15;" text="50" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1011.0" layoutY="344.0" prefHeight="43.0" prefWidth="37.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15; -fx-border-color: red; -fx-border-radius: 15 15 15 15;" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1197.0" layoutY="298.0" prefHeight="43.0" prefWidth="37.0" style="-fx-background-color: white; -fx-background-radius: 15 15 15 15; -fx-border-color: red; -fx-border-radius: 15 15 15 15;" text="1" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

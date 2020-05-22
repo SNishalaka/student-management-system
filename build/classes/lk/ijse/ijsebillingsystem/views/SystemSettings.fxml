@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="lk.ijse.ijsebillingsystem.controller.SystemSettingsController">
+    <stylesheets>
+        <URL value="@/lk/ijse/ijsebillingsystem/views/css/systemsettings.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="45.0" prefWidth="900.0" style="-fx-background-color: #017CFD;" />
+      <Pane layoutX="75.0" layoutY="22.0" prefHeight="45.0" prefWidth="45.0" rotate="45.0" style="-fx-background-color: #007CFD;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Pane>
+      <Label layoutX="38.0" layoutY="87.0" prefHeight="40.0" prefWidth="242.0" text="S Y S T E M  S E T T I N G S" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBatchNo" layoutX="209.0" layoutY="153.0" prefHeight="40.0" prefWidth="281.0" style="-fx-border-color: #AAD1BC;" />
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="153.0" prefHeight="40.0" prefWidth="149.0" text="IP Address">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBatchNo1" layoutX="209.0" layoutY="206.0" prefHeight="40.0" prefWidth="281.0" style="-fx-border-color: #AAD1BC;" />
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="206.0" prefHeight="40.0" prefWidth="149.0" text="Port">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBatchNo11" layoutX="209.0" layoutY="260.0" prefHeight="40.0" prefWidth="281.0" style="-fx-border-color: #AAD1BC;" />
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="260.0" prefHeight="40.0" prefWidth="149.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBatchNo111" layoutX="209.0" layoutY="313.0" prefHeight="40.0" prefWidth="281.0" style="-fx-border-color: #AAD1BC;" />
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="313.0" prefHeight="40.0" prefWidth="149.0" text="Password">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBatchNo1111" layoutX="209.0" layoutY="366.0" prefHeight="40.0" prefWidth="281.0" style="-fx-border-color: #AAD1BC;" />
+      <Label alignment="CENTER_RIGHT" layoutX="38.0" layoutY="366.0" prefHeight="40.0" prefWidth="149.0" text="Database">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnManageStudent" buttonType="RAISED" layoutX="592.0" layoutY="157.0" onAction="#btnManageStudentOnAction" prefHeight="40.0" prefWidth="231.0" ripplerFill="#156cee" style="-fx-background-color: #f25486;" text="Test Connection">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
